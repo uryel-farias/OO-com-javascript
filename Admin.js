@@ -6,6 +6,6 @@ class Admin extends User {
     }
 }
 
-const novoAdmin = new Admin("Livia", "livia@email", 15-11-22);
+const novoAdmin = new Admin("Livia", "livia@email", "15-11-2022");
 console.log(novoAdmin);
 console.log(novoAdmin.exibirInfos());
