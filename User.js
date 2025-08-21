@@ -14,8 +14,20 @@ export default class User {
         this.#listaCursos = listaCursos;
     }
 
+    #montaObjUser () {
+        return ({
+            nome: this.#nome,
+            email: this.#email,
+            nescimento: this.#nascimento,
+            role: this.#role,
+            ativo: this.#ativo,
+            listaCursos: this.#listaCursos,
+        })
+    }
+
     exibirInfos() {
-        return `${this.#nome}, ${this.#email}`
+        const objUser = this.#montaObjUser();
+        return `${objUser.nome}, ${objUser.email}, ${objUser.nescimento}`
     }
 
     exibirListaCursos() {
