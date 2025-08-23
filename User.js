@@ -14,6 +14,10 @@ export default class User {
         this.#listaCursos = listaCursos;
     }
 
+    //get nome () {
+    //    return this.#nome;
+    //}
+
     #montaObjUser () {
         return ({
             nome: this.#nome,
