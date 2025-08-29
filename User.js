@@ -18,6 +18,11 @@ export default class User {
         return this.#nome
     }
 
+    set nome(novoNome) {
+    this.#nome = novoNome
+
+}
+
     get email() {
         return this.#email
     }
